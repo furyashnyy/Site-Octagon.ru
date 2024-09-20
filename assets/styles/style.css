@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(/assets/imgs/teaser.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #161616;
+    color: white;
+    width: 40%;
+    height: 40%;    
+    margin: 0 auto;
+}
+header {
+    margin: 0 0%;
+    width: 100%;
+    padding-bottom: 110px;
+}
+.noise::before{
+    position:fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    content: "";
+    /* you can control opacity of noise  */
+    opacity: .1;  
+    z-index: 1000;
+    pointer-events: none;
+    background: url(/assets/styles/noise.gif) repeat;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+h1{
+    font-family:'bvcr';
+    font-size: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+a.text:active,
+/* активная/посещенная ссылка */
+a.text:hover,
+/* при наведении */
+a.text {
+    text-decoration: none;
+    color: #666;
+}
+.linksHeader{
+    text-align: right;
+    font-size: 20px;
+    padding-top: 5px;
+    font-family: 'bvcr';
+    text-decoration: none
+}
+.social-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+/* Контейнер для центрирования кнопки */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Стили для кнопки */
+.centered-button {
+    padding: 20px 60px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.centered-button:hover {
+    background-color: #b0b0b0;
+}
